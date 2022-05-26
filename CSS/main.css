@@ -1,0 +1,18 @@
+.intro {
+  display: grid;
+  grid-template-columns: repeat(12, 80px);
+  column-gap: 14px;
+  justify-content: center;
+  grid-auto-rows: 80px; }
+  .intro .introImg {
+    grid-column: 2/9;
+    grid-row: 1/9;
+    background-color: red; }
+  .intro .introTitle {
+    grid-column: 9/12;
+    grid-row: 1/4;
+    background-color: blue; }
+  .intro .introText {
+    background-color: green;
+    grid-column: 8/12;
+    grid-row: 4/10; }
