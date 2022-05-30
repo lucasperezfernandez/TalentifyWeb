@@ -47,17 +47,21 @@
     background-color: #FE0074; }
     .queOfrecemos h3 span {
       text-decoration: line-through; }
+  .queOfrecemos .queOfrecemosIntro {
+    font-size: 1.2rem; }
   .queOfrecemos .notConsulting {
     width: 500px; }
   .queOfrecemos .recruiting {
     width: 500px; }
     .queOfrecemos .recruiting img {
-      width: 250px;
-      height: 250px;
+      width: 409px;
+      height: 409px;
       object-fit: cover;
       border-radius: 50%;
       margin-top: 30px;
       margin-left: 30px; }
+  .queOfrecemos .recruitingFlex {
+    margin-top: 50px; }
   .queOfrecemos .consultingFlex {
     display: flex;
     flex-direction: row;
@@ -66,13 +70,56 @@
     align-items: center; }
     .queOfrecemos .consultingFlex p {
       font-weight: bolder;
-      margin-left: 3%; }
+      margin-left: 5%;
+      font-size: 1.3rem; }
 
 .pinkBar {
   background-color: #FE0074;
   height: 80px;
   position: relative;
   width: 100%; }
+
+.peoplePartners {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .peoplePartners .peopleTitle {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    justify-items: center; }
+    .peoplePartners .peopleTitle h2 {
+      justify-content: center; }
+  .peoplePartners .peoplePartnersFlex {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: solid black 1px;
+    display: flex; }
+    .peoplePartners .peoplePartnersFlex div {
+      width: 50%;
+      height: 400px; }
+    .peoplePartners .peoplePartnersFlex img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .peoplePartners .peoplePartnersFlex .peopleText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      border-left: solid black 1px;
+      border-right: solid black 1px; }
+      .peoplePartners .peoplePartnersFlex .peopleText h3 {
+        color: #FE0074;
+        font-size: 2rem;
+        margin: 25px; }
+      .peoplePartners .peoplePartnersFlex .peopleText P {
+        align-items: center;
+        margin: 25px;
+        font-size: 1.3rem; }
 
 .titleFont {
   font-family: 'Raleway', sans-serif; }
