@@ -1,0 +1,62 @@
+.article1{
+    h2{
+        margin-left: 15%;
+        font-size: 3rem;
+    }
+}
+
+
+.queOfrecemos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -80px;
+    position: relative  ;
+    h3{
+        span{
+            text-decoration: line-through;
+        }
+        font-size: 2.3rem;
+        height: 60px;
+        color: #FEF9FF;
+        background-color: #fe007200;
+        margin-top: 20px;
+        background-color: #FE0074;
+    }
+    .notConsulting{
+        width: 500px;
+
+    }
+    .recruiting{
+        width: 500px;
+        img{
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+    }
+    .consultingFlex{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        p{
+            font-weight:bolder;
+            margin-left: 3%;
+        }
+
+    }
+
+}
+
+.pinkBar{
+    background-color: #FE0074;
+    height: 80px;
+    position: relative  ;
+    width: 100%;
+}
+
