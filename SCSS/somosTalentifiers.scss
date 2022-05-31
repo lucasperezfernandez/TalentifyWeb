@@ -1,0 +1,87 @@
+.somosTalentifiers{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(12, 80px);
+    column-gap: 14px;
+    grid-auto-rows: 80px;
+    justify-content: center;
+    .talentifiersTitle{
+        grid-column: 4/10;
+        grid-row: 1;
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .talentifiersAbout{
+        grid-column: 1/10;
+        grid-row: 6/12;
+        background-color: #1AC775;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        
+        h3,p{
+            margin-left: 70px;
+            margin-right: 100px;
+        }
+        h3{
+            color: white;
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.2rem;
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+    .talentifiersHistoria{
+        grid-column: 4/11;
+        grid-row: 12/18;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -50px;
+        h3{
+            color: #FE0074;
+            font-size: 2rem;
+        }
+        p{
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+    .talentifiersImg{
+        margin-top: 35px;
+        grid-column: 7/12;
+        grid-row: 2/8;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit:cover ;
+            border-radius: 50%;
+        }
+    }
+    .talentifiersLines{
+        grid-column: 10/13;
+        grid-row: 11/12;
+        margin-left: -14px;
+        border-bottom: black solid 1px;
+        border-top: black solid 1px;
+    }
+    .talentifiersLines2{
+        border-left: black solid 1px;
+        border-right: black solid 1px;
+        grid-column: 2/3;
+        grid-row: 12/18;
+    }
+    .talentifiersLines3{
+        border-left: black solid 1px;
+        border-right: black solid 1px;
+        grid-column: 11/12;
+        grid-row: 12/18;
+    }
+}
