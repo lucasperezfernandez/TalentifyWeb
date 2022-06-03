@@ -17,7 +17,7 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        border-bottom: solid black 1px;
+        border-bottom: solid  #1A1A1A 1px;
 
         div{
             width: 50%;
@@ -35,8 +35,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            border-left: solid black 1px;
-            border-right: solid black 1px;
+            border-left: solid  #1A1A1A 1px;
+            border-right: solid  #1A1A1A 1px;
 
             h3{
                 color: #FE0074;

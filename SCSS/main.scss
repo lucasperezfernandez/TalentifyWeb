@@ -2,16 +2,20 @@
 @import 'queOfrecemos.scss';
 @import 'people.scss';
 @import 'somosTalentifiers.scss';
+@import 'header.scss';
+
 // Agregar aca el grid y usarlo con rows auto, para manterner el ancho 
 
 //Fonts
 .titleFont{
     font-family: 'Raleway', sans-serif;
 }
-p{
+p, a{
     font-family: 'Montserrat Alternates', sans-serif;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Raleway', sans-serif;
-
+}
+html{
+    scroll-behavior: smooth;
 }

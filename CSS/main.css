@@ -1,4 +1,5 @@
 .intro {
+  margin-top: 150px;
   display: grid;
   grid-template-columns: repeat(12, 80px);
   column-gap: 14px;
@@ -35,8 +36,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: -80px;
-  position: relative; }
+  margin-top: -80px; }
   .queOfrecemos h3 {
     font-size: 2.3rem;
     height: 60px;
@@ -52,7 +52,7 @@
     width: 500px; }
   .queOfrecemos .recruiting {
     width: 500px; }
-    .queOfrecemos .recruiting img {
+    .queOfrecemos .recruiting .recruitingImg img {
       width: 409px;
       height: 409px;
       object-fit: cover;
@@ -71,11 +71,15 @@
       font-weight: bolder;
       margin-left: 5%;
       font-size: 1.3rem; }
+    .queOfrecemos .consultingFlex .consutlingImg {
+      height: 56px;
+      width: 48px; }
+      .queOfrecemos .consultingFlex .consutlingImg img {
+        object-fit: cover; }
 
 .pinkBar {
   background-color: #FE0074;
   height: 80px;
-  position: relative;
   width: 100%; }
 
 .peoplePartners {
@@ -95,7 +99,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    border-bottom: solid black 1px;
+    border-bottom: solid  #1A1A1A 1px;
     display: flex; }
     .peoplePartners .peoplePartnersFlex div {
       width: 50%;
@@ -109,8 +113,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      border-left: solid black 1px;
-      border-right: solid black 1px; }
+      border-left: solid  #1A1A1A 1px;
+      border-right: solid  #1A1A1A 1px; }
       .peoplePartners .peoplePartnersFlex .peopleText h3 {
         color: #FE0074;
         font-size: 2rem;
@@ -190,11 +194,46 @@
     grid-column: 11/12;
     grid-row: 12/18; }
 
+header {
+  background-color: #1A1A1A;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed; }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+    header nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%; }
+      header nav ul li {
+        list-style: none; }
+        header nav ul li a {
+          color: white;
+          text-decoration: none; }
+    header nav .headerLogo {
+      background-color: white;
+      height: 100px;
+      width: 180px; }
+      header nav .headerLogo img {
+        object-fit: cover;
+        height: 100px;
+        max-width: 170px; }
+
 .titleFont {
   font-family: 'Raleway', sans-serif; }
 
-p {
+p, a {
   font-family: 'Montserrat Alternates', sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif; }
+
+html {
+  scroll-behavior: smooth; }

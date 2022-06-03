@@ -1,0 +1,39 @@
+header{
+    background-color:  #1A1A1A;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        li{
+            list-style: none;
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            
+        }
+    }
+    .headerLogo{
+        background-color: white;
+        height: 100px;
+        width: 180px;
+        img{
+            object-fit: cover;
+            height: 100px;
+            max-width: 170px;
+        }
+    }
+}}

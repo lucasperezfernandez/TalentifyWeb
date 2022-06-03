@@ -11,7 +11,6 @@
     flex-direction: row;
     justify-content: space-around;
     margin-top: -80px;
-    position: relative  ;
     h3{
         span{
             text-decoration: line-through;
@@ -31,14 +30,17 @@
     }
     .recruiting{
         width: 500px;
-        img{
-            width: 409px;
-            height: 409px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-top: 30px;
-            margin-left: 30px;
+        .recruitingImg{
+            img{
+                width: 409px;
+                height: 409px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-top: 30px;
+                margin-left: 30px;
+            }
         }
+        
     }
     .recruitingFlex{
         margin-top: 50px   ;
@@ -54,7 +56,13 @@
             margin-left: 5%;
             font-size: 1.3rem;
         }
-
+        .consutlingImg{
+            height: 56px;
+            width: 48px;
+            img{
+                object-fit: cover;
+            }
+        }
     }
 
 }
@@ -62,7 +70,6 @@
 .pinkBar{
     background-color: #FE0074;
     height: 80px;
-    position: relative  ;
     width: 100%;
 }
 
