@@ -18,10 +18,13 @@
     .intro .introText .introTextPara {
       width: 250px; }
       .intro .introText .introTextPara p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         line-height: 30px; }
+  .intro .introNavegador {
+    grid-column: 11;
+    grid-row: 8; }
   .intro .introImg {
-    grid-column: 2/9;
+    grid-column: 1/9;
     grid-row: 1/9; }
     .intro .introImg img {
       width: 100%;
@@ -52,6 +55,11 @@
     width: 500px; }
   .queOfrecemos .recruiting {
     width: 500px; }
+    .queOfrecemos .recruiting .navegadorIcon {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: -70px;
+      height: 120px; }
     .queOfrecemos .recruiting .recruitingImg img {
       width: 409px;
       height: 409px;
@@ -189,10 +197,15 @@
     grid-column: 2/3;
     grid-row: 12/18; }
   .somosTalentifiers .talentifiersLines3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     border-left: black solid 1px;
     border-right: black solid 1px;
     grid-column: 11/12;
     grid-row: 12/18; }
+    .somosTalentifiers .talentifiersLines3 img {
+      margin-bottom: 5%; }
 
 header {
   background-color: #1A1A1A;

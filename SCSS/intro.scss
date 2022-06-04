@@ -21,13 +21,17 @@
         .introTextPara{
             width: 250px;
             p{
-                font-size: 1.2rem;
+                font-size: 1.4rem;
                 line-height: 30px;
             }
         }
     }
+    .introNavegador{
+        grid-column: 11;
+        grid-row: 8;
+    }
     .introImg{
-        grid-column: 2/9;
+        grid-column: 1/9;
         grid-row: 1/9;
         
         img{

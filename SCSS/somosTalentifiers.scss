@@ -79,9 +79,15 @@
         grid-row: 12/18;
     }
     .talentifiersLines3{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
         border-left: black solid 1px;
         border-right: black solid 1px;
         grid-column: 11/12;
         grid-row: 12/18;
+        img{
+            margin-bottom: 5%;
+        }
     }
 }
