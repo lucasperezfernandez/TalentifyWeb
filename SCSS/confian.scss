@@ -65,16 +65,19 @@
 
 .divNosotros {
     p{
-    font-size: 1rem;
+    font-size: 1.3rem;
     height: 20%;
     line-height: 1.5em;
-    margin-top: 30%;
+    margin-top: 30px;
     padding: 30px;
+    span{
+        color: #FE0074;
+    }
 
 
-    @media (max-width:480px){
+    @media (max-width:768px){
         text-align: justify;
-        font-size: 0.6rem;
+        font-size: .9rem;
         justify-content: center;
         padding: 15px;
     }

@@ -124,17 +124,67 @@
     display: none; }
   .article1 {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0%; }
     .article1 h2 {
       margin-left: 5%;
       font-size: 2rem;
       margin-top: 40px; }
+    .article1 p {
+      font-size: .9rem; }
   .queOfrecemos {
-    width: 375px;
+    max-width: 100%;
     flex-direction: column;
     margin-top: 10px; }
     .queOfrecemos h3 {
-      margin-top: 30px; } }
+      padding-top: 5%;
+      padding-left: 5%;
+      margin-top: 30px;
+      font-size: 1.8rem;
+      max-width: 100%; }
+    .queOfrecemos .notConsulting {
+      max-width: 100%; }
+      .queOfrecemos .notConsulting .queOfrecemosIntro {
+        margin-left: 25px;
+        margin-right: 25px; }
+        .queOfrecemos .notConsulting .queOfrecemosIntro h4 {
+          font-size: 1rem; }
+      .queOfrecemos .notConsulting .consultingFlexContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10%;
+        margin-right: 5%; }
+        .queOfrecemos .notConsulting .consultingFlexContainer .consultingFlex {
+          width: 100%; }
+          .queOfrecemos .notConsulting .consultingFlexContainer .consultingFlex img {
+            height: 27px; }
+          .queOfrecemos .notConsulting .consultingFlexContainer .consultingFlex p {
+            font-size: 1rem; }
+    .queOfrecemos .recruiting {
+      max-width: 100%; }
+      .queOfrecemos .recruiting .queOfrecemosIntro {
+        margin-left: 25px;
+        margin-right: 25px; }
+        .queOfrecemos .recruiting .queOfrecemosIntro h4 {
+          font-size: 1rem; }
+      .queOfrecemos .recruiting .recruitingFlex {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10%;
+        margin-right: 7%; }
+        .queOfrecemos .recruiting .recruitingFlex .recruitingImg {
+          display: none; }
+        .queOfrecemos .recruiting .recruitingFlex .consultingFlex {
+          width: 100%; }
+          .queOfrecemos .recruiting .recruitingFlex .consultingFlex img {
+            height: 27px; }
+          .queOfrecemos .recruiting .recruitingFlex .consultingFlex p {
+            font-size: 1rem; }
+        .queOfrecemos .recruiting .recruitingFlex .navegadorIcon img {
+          display: none; } }
 
 .peoplePartners {
   display: flex;
@@ -178,8 +228,21 @@
         margin: 25px;
         font-size: 1.3rem; }
 
+@media (max-width: 768px) {
+  .peoplePartners .peoplePartnersFlex {
+    flex-direction: column; }
+    .peoplePartners .peoplePartnersFlex div {
+      width: 100%;
+      height: 240px; }
+    .peoplePartners .peoplePartnersFlex .peopleText {
+      align-items: center; }
+      .peoplePartners .peoplePartnersFlex .peopleText h3 {
+        font-size: 2rem; }
+      .peoplePartners .peoplePartnersFlex .peopleText p {
+        font-size: .9rem; } }
+
 .somosTalentifiers {
-  margin-top: 200px;
+  margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(12, 80px);
   column-gap: 14px;
@@ -252,6 +315,60 @@
     grid-row: 12/18; }
     .somosTalentifiers .talentifiersLines3 img {
       margin-bottom: 5%; }
+
+@media (max-width: 768px) {
+  .somosTalentifiers {
+    grid-template-columns: repeat(4, 78px);
+    column-gap: 9px;
+    margin-top: 0; }
+    .somosTalentifiers .talentifiersTitle {
+      grid-column: 1/5;
+      font-size: 2rem;
+      align-items: center; }
+    .somosTalentifiers .talentifiersImg {
+      grid-column: 1/5;
+      grid-row: 2/6;
+      margin-top: 0;
+      padding-top: 0;
+      margin-bottom: -15px; }
+    .somosTalentifiers .talentifiersAbout {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      grid-column: 1/5;
+      grid-row: 5/11;
+      justify-content: center; }
+      .somosTalentifiers .talentifiersAbout h3 {
+        grid-row: 9;
+        grid-column: 1/5;
+        font-size: 1.4rem;
+        margin: 0;
+        margin-top: 50px;
+        align-items: center; }
+      .somosTalentifiers .talentifiersAbout p {
+        font-size: .9rem;
+        grid-column: 1/5;
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px; }
+    .somosTalentifiers .talentifiersHistoria {
+      display: flex;
+      margin: 0;
+      grid-column: 1/5;
+      grid-row: 11/18;
+      justify-content: center;
+      justify-content: flex-start;
+      align-items: center; }
+      .somosTalentifiers .talentifiersHistoria p {
+        margin-left: 15px;
+        margin-right: 15px; }
+    .somosTalentifiers .talentifiersLines {
+      display: none; }
+    .somosTalentifiers .talentifiersLines2 {
+      display: none; }
+    .somosTalentifiers .talentifiersLines3 {
+      display: none; } }
 
 header {
   height: 100px; }
@@ -401,83 +518,77 @@ header {
   display: block; }
 
 .divNosotros p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   height: 20%;
   line-height: 1.5em;
-  margin-top: 30%;
+  margin-top: 30px;
   padding: 30px; }
-  @media (max-width: 480px) {
+  .divNosotros p span {
+    color: #FE0074; }
+  @media (max-width: 768px) {
     .divNosotros p {
       text-align: justify;
-      font-size: 0.6rem;
+      font-size: .9rem;
       justify-content: center;
       padding: 15px; } }
 
 footer {
-  background-color: black; }
-
-footer .container {
+  background-color: black;
   width: 100%;
-  display: flex; }
+  height: 280px; }
+  footer h2 {
+    color: white; }
+  footer p {
+    color: white; }
+  footer i {
+    color: #FE0074; }
+  footer .footerContainer {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    footer .footerContainer .footerHeader {
+      margin-left: 5%; }
+      footer .footerContainer .footerHeader h2 {
+        font-size: 2.3rem; }
+    footer .footerContainer .footerLinks {
+      height: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around; }
+      footer .footerContainer .footerLinks .linksFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; }
+        footer .footerContainer .footerLinks .linksFlex .data {
+          margin-bottom: 5%; }
+          footer .footerContainer .footerLinks .linksFlex .data i {
+            font-size: 3rem;
+            margin-right: 15px; }
+          footer .footerContainer .footerLinks .linksFlex .data a {
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: white; }
+          footer .footerContainer .footerLinks .linksFlex .data p {
+            font-size: 1.4rem; }
 
-.title-footer {
-  font-size: 3rem;
-  font-weight: 1200rem;
-  font-family: 'Montserrat Alternates', sans-serif;
-  color: white;
-  text-align: left;
-  padding-top: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 100px; }
-
-@media (max-width: 488px) {
-  .title-footer {
-    font-size: 2rem;
-    text-align: center; } }
-
-.div-contact-data {
-  display: inline-block;
-  flex-wrap: wrap;
-  padding: 2em; }
-  @media (max-width: 575.98px) {
-    .div-contact-data {
-      padding: 1em;
-      justify-content: center;
-      display: block; } }
-
-.div-icon-data {
-  display: flex;
-  justify-content: end;
-  align-items: baseline; }
-  @media (max-width: 575.98px) {
-    .div-icon-data {
-      justify-content: center; } }
-  @media (max-width: 992px) {
-    .div-icon-data {
-      justify-content: center; } }
-
-.p-contact-data {
-  font-size: 1em;
-  font-weight: 600;
-  color: white;
-  text-align: justify;
-  font-family: 'Montserrat Alternates', sans-serif;
-  text-decoration: none; }
-  @media (max-width: 575.98px) {
-    .p-contact-data {
-      font-size: 0.6em;
-      text-align: center; } }
-  @media (max-width: 992px) {
-    .p-contact-data {
-      text-align: center; } }
-
-.fa-instagram, .fa-phone-alt, .fa-linkedin, .fa-envelope {
-  font-size: 2.5rem;
-  color: #fc0a83;
-  margin-right: 1rem; }
-  @media (max-width: 560px) {
-    .fa-instagram, .fa-phone-alt, .fa-linkedin, .fa-envelope {
-      font-size: 1.5rem; } }
+@media (max-width: 768px) {
+  footer .footerContainer .footerHeader {
+    margin-bottom: 15px; }
+    footer .footerContainer .footerHeader h2 {
+      font-size: 1.8rem; }
+  footer .footerContainer .footerLinks {
+    margin-left: 10%;
+    align-items: baseline;
+    justify-content: center; }
+    footer .footerContainer .footerLinks .linksFlex .data a {
+      font-size: .9rem; }
+      footer .footerContainer .footerLinks .linksFlex .data a i {
+        font-size: 1.5rem; }
+  .data a {
+    font-size: rem; }
+  .footerLinks {
+    flex-direction: column; } }
 
 .titleFont {
   font-family: 'Raleway', sans-serif; }

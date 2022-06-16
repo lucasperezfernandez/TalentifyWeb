@@ -2,93 +2,100 @@
 // Footer Charlemos
 footer{
     background-color: black;
-    
-
-}
-
-footer .container{
-
     width: 100%;
-    display: flex;
-    
-}
-
-.title-footer {
-        font-size: 3rem;
-        font-weight: 1200rem;
-        font-family: 'Montserrat Alternates', sans-serif;
+    height: 280px;
+    h2{
         color: white;
-        text-align: left;
-        padding-top: 2rem;
-        margin-bottom: 2rem;
-        margin-left: 100px;
-}
+    }
+    p{
+        color: white;
+    }
+    i{
+        color: #FE0074;
+    }
+    .footerContainer{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .footerHeader{
+            margin-left: 5%;
+            h2{
+                font-size: 2.3rem;
+            }
 
-@media (max-width:488px){
-    .title-footer{
-        font-size: 2rem;
-        text-align: center;
+        }
+        .footerLinks{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            .linksFlex{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .data{
+                    margin-bottom: 5%;
+                    i{
+                        font-size: 3rem;
+                        margin-right: 15px;
+                    }
+                    a{
+                        font-size: 1.4rem;
+                        text-decoration: none;
+                        color: white;
+                    }
+                    p{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
     }
 }
-.div-contact-data{
-  display: inline-block;
-  flex-wrap: wrap;
-    padding: 2em;
-   
 
-    @media (max-width:575.98px){
-     padding: 1em;
-    justify-content: center; 
-    display: block;
-       
-    }
 
-}
-.div-icon-data{
-    display: flex;
-    justify-content: end;
-    align-items: baseline;
-  
+
+
+
+@media (max-width:768px){
+    footer{
+        .footerContainer{
+            .footerHeader{
+                margin-bottom: 15px;
+                h2{
+                    font-size: 1.8rem;
+                }
     
-
-
-    @media (max-width: 575.98px){
-        justify-content: center;
-    }
-    @media (max-width: 992px){
-        justify-content: center;
-    }
-}
-
-.p-contact-data{
-
-    font-size: 1em;
-    font-weight: 600;
-    color: white;
-    text-align: justify;
-    font-family: 'Montserrat Alternates', sans-serif;
-    text-decoration: none;
-   
-
-    @media (max-width: 575.98px){
-        font-size: 0.6em;
-        text-align: center;
-
+            }
     
+            .footerLinks{
+                margin-left: 10%;
+                align-items: baseline;
+                justify-content: center;
+                .linksFlex{
+                    .data{
+                        a{
+                            font-size: .9rem;
+                            i{
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
     }
-    @media (max-width: 992px){
-        text-align: center;
+    .data{
+        a{
+            font-size: rem;
+        }
+    }
+    .footerLinks{
+        flex-direction: column;
     }
 }
 
 
-.fa-instagram, .fa-phone-alt, .fa-linkedin, .fa-envelope {
-
-    font-size: 2.5rem;
-    color:rgb(252, 10, 131);
-    margin-right: 1rem;
-
-   @media (max-width: 560px){
-       font-size: 1.5rem;
-   } 
-}
