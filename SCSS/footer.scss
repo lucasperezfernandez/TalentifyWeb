@@ -19,7 +19,7 @@ footer{
         flex-direction: column;
         align-items: flex-start;
         .footerHeader{
-            margin-left: 5%;
+            padding-left: 5%;
             h2{
                 font-size: 2.3rem;
             }
@@ -70,7 +70,8 @@ footer{
             }
     
             .footerLinks{
-                margin-left: 10%;
+                max-width: 290px;
+                padding-left: 10%;
                 align-items: baseline;
                 justify-content: center;
                 .linksFlex{

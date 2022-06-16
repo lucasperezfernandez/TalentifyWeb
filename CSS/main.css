@@ -548,7 +548,7 @@ footer {
     flex-direction: column;
     align-items: flex-start; }
     footer .footerContainer .footerHeader {
-      margin-left: 5%; }
+      padding-left: 5%; }
       footer .footerContainer .footerHeader h2 {
         font-size: 2.3rem; }
     footer .footerContainer .footerLinks {
@@ -578,7 +578,8 @@ footer {
     footer .footerContainer .footerHeader h2 {
       font-size: 1.8rem; }
   footer .footerContainer .footerLinks {
-    margin-left: 10%;
+    max-width: 290px;
+    padding-left: 10%;
     align-items: baseline;
     justify-content: center; }
     footer .footerContainer .footerLinks .linksFlex .data a {
